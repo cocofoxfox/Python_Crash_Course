@@ -106,3 +106,88 @@ for car in cars:
 #using the rang() function
 for value in range(1, 5):
     print(value)
+
+numbers = list(range(1, 6))
+print(numbers)
+
+#using range() to skip numbers
+
+even_numbers = list(range(2, 11, 2))
+print(even_numbers)
+
+#two asterisks(**) represent exponents
+squares = []
+for value in range(1, 11):
+    squares.append(value ** 2)
+print(squares)
+
+min(squares)
+max(squares)
+sum(squares)
+
+#list comprehension
+squares = [value**2 for value in range(1, 11)]
+print(squares)
+
+#slice a list
+print(squares[0 : 3])
+print(squares[:4])
+print(squares[2:])
+print(squares[-3:])
+
+#looping a slice
+for square in squares[:3]:
+    print(square)
+
+#copying a list
+squares_copy = squares[:]
+
+#tuples: immutable list
+dimensions = (200, 50)
+for dimension in dimensions:
+    print(dimension)
+
+#write over(redefine a tuple)
+dimensions = (200, 50)
+for dimension in dimensions:
+    print(dimension)
+
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+#Python Enhancement Proposal(PEP) : the style guide
+#Indentation: 4 spaces, no TABs
+#line length limit 80-character
+
+
+#If statement
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+
+#Testing for equality is case sensitive in Python.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
